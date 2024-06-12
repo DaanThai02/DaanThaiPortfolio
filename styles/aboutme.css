@@ -1,0 +1,133 @@
+.about-section {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    justify-content: start;
+    align-items: start;
+    gap: 6rem;
+}
+
+.aboutme-photo {
+    position: relative;
+}
+
+.aboutme-photo img:first-of-type{
+    width: 100%;
+    height: auto;
+    object-position: center;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    animation: grayscale-photo 14s infinite;
+    animation-timing-function: step-end;
+}
+
+.img-gallery img {
+    width: 10rem;
+    height: 10rem;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 0.5rem;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    transition: 0.3s all;
+    box-shadow: var(--boxshadow-2);
+}
+
+.img-gallery img:hover {
+    width: 10rem;
+    height: 10rem;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 0.5rem;
+    -webkit-filter: grayscale(0%);
+    filter: grayscale(0%);
+    border-radius: 0;
+}
+
+.img-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.8rem;
+
+}
+
+.listening_watching-section {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    justify-content: start;
+    align-items: start;
+    gap: 8rem;
+}
+
+.photo-cursor {
+    position: absolute;
+    bottom: -4rem;
+    right: -4rem;
+    animation: cursor-animation 14s infinite;
+    animation-timing-function: cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+@keyframes cursor-animation {
+    0% {
+        transform: translate(0rem, 0rem);
+        scale: 1;
+    }
+    10%{
+        transform: translate(0rem, 0rem);
+        scale: 1;
+    }
+    25% {
+        transform: translate(-16rem, -5rem);
+        scale: 1;
+    }
+    40% {
+        transform: translate(-18rem, -15rem);
+        scale: 1;
+    }
+    45% {
+        transform: translate(-18rem, -15rem);
+        scale: 1;
+    } 
+    65% {
+        transform: translate(-10rem, -16rem);
+        scale: 1;
+    }
+    66% {
+        transform: translate(-10rem, -16rem);
+        scale: 0.99;
+    }
+    68%{
+        transform: translate(-10rem, -16rem);
+        scale: 1;
+    }
+    80%{
+        transform: translate(-10rem, -16rem);
+        scale: 1;
+    }
+    90%{
+        transform: translate(-8rem, -11rem);
+        scale: 1;
+    }
+    100% {
+        transform: translate(0rem, 0rem);
+        scale: 1;
+    }
+}
+
+@keyframes grayscale-photo {
+    0% {
+        -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    }
+    65%{
+        -webkit-filter: grayscale(0%);
+        filter: grayscale(0%);
+    }
+    68%{
+        -webkit-filter: grayscale(0%);
+    filter: grayscale(0%);
+    }
+    100% {
+        -webkit-filter: grayscale(0%);
+    filter: grayscale(0%);
+    }
+}
