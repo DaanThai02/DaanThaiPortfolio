@@ -75,7 +75,7 @@ li {
 /* Custom Properties */
 :root {
     --color-white:rgb(255, 255, 255);
-    --color-blue: rgb(4, 110, 231);
+    --color-blue: rgb(70, 156, 255);
     --color-light-blue: rgb(110, 178, 255);
     --color-light-black: rgb(18, 18, 18);
     --color-light-grey: rgb(241, 241, 241);
@@ -83,6 +83,8 @@ li {
     --color-grey: rgb(150, 150, 150);
     --color-dark-grey: rgb(49, 49, 49);
     --color-purple: rgb(67, 63, 255);
+    --color-purple-transparant: rgba(181, 192, 255, 0.596);
+    --color-blue-transparant: rgba(166, 208, 255, 0.596);
 
     --ff-primary: 'Figtree', 'Arial', sans-serif;
 
@@ -129,6 +131,22 @@ li {
   }
 
 /* Utility */
+.color-purple {
+  color: var(--color-purple);
+}
+
+.color-blue {
+  color: var(--color-blue);
+}
+
+.bg-color-blue {
+  background-color: var(--color-blue-transparant);
+}
+
+.bg-color-purple {
+  background-color: var(--color-purple-transparant);
+}
+
 .link {
   text-decoration: none;
   color: var(--color-light-black);
@@ -185,6 +203,11 @@ color: var(--color-grey);
   color: var(--color-grey);
 }
 
+.hyperlink {
+  font-weight: var(--fw-bold);
+  
+}
+
 .devider {
   margin-block: var(--margin-5);
   border: 1px solid var(--color-light-light-grey);
@@ -199,7 +222,14 @@ color: var(--color-grey);
   width: 100%;
   height: auto;
   border-radius: var(--border-r);
+}
+
+.img-shadow {
   box-shadow: var(--boxshadow-1);
+}
+
+.img-shadow2 {
+  box-shadow: var(--boxshadow-2);
 }
 
 .section-margin-1 {
@@ -226,10 +256,6 @@ color: var(--color-grey);
   margin: 0 auto;
   max-width: 68rem;
   padding: 2rem 2rem 2rem 2rem;
-}
-
-.color-purple {
-  color: var(--color-purple);
 }
 
 .popup-img {
