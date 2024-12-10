@@ -1,5 +1,5 @@
-.project-main li::marker {
-    content: "";
+.overview-detail ul {
+    list-style-type: none;
 }
 
 .project-main h1 {
@@ -36,6 +36,7 @@
     margin-bottom: var(--margin-2);
     box-shadow: var(--boxshadow-1);
 }
+
 
 .overview-detail {
     display: flex;

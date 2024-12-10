@@ -69,7 +69,7 @@ li {
   color: var(--color-light-black);
   font-weight: var(--fw-regular);
   font-size: var(--fs-500);
-  list-style-position: inside;
+  /* list-style-position: inside; */
 }
 
 /* Custom Properties */
@@ -216,6 +216,15 @@ color: var(--color-grey);
 .spacing {
   margin-block: var(--margin-3);
   border: 0;
+}
+
+.spacing-2 {
+  margin-block: var(--margin-4);
+  border: 0;
+}
+
+.caption {
+  margin: 2rem 0 0 0;
 }
 
 .img-size {
@@ -425,7 +434,13 @@ color: var(--color-grey);
       flex-direction: column-reverse;
       gap: 2rem;
     }
-    
+
+    .grid-3_1 {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+    }
+
     .video-container {
       display: flex;
       align-items: center;
