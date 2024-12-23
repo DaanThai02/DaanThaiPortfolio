@@ -1,0 +1,12 @@
+.container-overflow-p3 {
+    width: auto;
+    height: 60rem;
+ 
+    border-radius: 1rem;
+    box-shadow: var(--boxshadow-1);
+    overflow-x: hidden;
+ }
+
+ .container-overflow-p3 img {
+    max-width: 100%;
+}

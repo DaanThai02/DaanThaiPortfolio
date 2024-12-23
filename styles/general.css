@@ -83,6 +83,7 @@ li {
     --color-grey: rgb(150, 150, 150);
     --color-dark-grey: rgb(49, 49, 49);
     --color-purple: rgb(67, 63, 255);
+    --color-orange: rgb(251, 184, 28);
     --color-purple-transparant: rgba(181, 192, 255, 0.596);
     --color-blue-transparant: rgba(166, 208, 255, 0.596);
 
@@ -131,6 +132,10 @@ li {
   }
 
 /* Utility */
+.color-orange {
+  color: var(--color-orange);
+}
+
 .color-purple {
   color: var(--color-purple);
 }
