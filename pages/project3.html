@@ -24,6 +24,7 @@
     <link href="../styles/header.css" rel="stylesheet" />
   </head>
   <body id="top-page" class="project-body">
+    <canvas id="noise" class="noise" width="1395" height="1313"></canvas>
     <header>
       <nav>
         <ul class="nav-links" id="menu">
@@ -194,23 +195,53 @@
         </ul>
       </nav>
     </header>
-    <main class="project-main container">
+    <!-- modal -->
+    <div class="popup-img">
+      <span>&times;</span>
+      <img src="../images/example.png" alt="" />
+    </div>
+    <div class="popup-video">
+      <span>&times;</span>
+      <video
+        autoplay
+        muted
+        loop
+        src="../video/postcard-experiment.mp4"
+      ></video>
+    </div>
+    <!-- modal -->
+    <!-- side-navbar -->
+    <nav class="side-navbar fade_right">
+      <div>
+        <a href="#overview"><p class="menu-item link">Overview</p></a>
+        <a href="#rebranding"><p class="menu-item link">Rebranding</p></a>
+        <a href="#explaining"><p class="menu-item link">Explaining</p></a>
+      </div>
+    </nav>
+    <!-- side-navbar -->
+    <!-- top-button -->
+    <div class="top-button">
+      <a class="top_button" href="#top-page"
+        ><i class="bx bx-up-arrow-alt"></i
+      ></a>
+    </div>
+    <!-- top-button -->
+    <main class="project-main container_2">
       <section id="overview" class="brief fade_up">
         <h1>Smart</h1>
-        <img src="../images/Reorder/Reorder_project_banner_2.png" alt="" />
+        <img src="../images/smart/Smart_project_banner.png"  alt="" />
         <div class="overview">
           <div class="section-margin">
             <h4>Overview</h4>
             <p>
-              For my 2nd year internship, I have the pleasure of working with
               <a
-                class="hyperlink color-blue"
-                href="https://generous.studio/"
+                class="hyperlink color-orange"
+                href="https://nl.smart.com/nl/financing-and-leasing/private-leasing/"
                 target="_blank"
-                >Generous Studio</a
-              >. I worked on a project called Reorder, which is a service that
-              helps grow small businesses by facilitating product sales via
-              WhatsApp.
+                >Smart</a
+              > is a German brand known for compact electric cars, co-owned by Mercedes-Benz and Geely.
+
+              For this project, I redesigned the homepage with a more commercial and eye-catching look, using brighter colors and conversion principles to attract more customers.
             </p>
           </div>
           <div class="overview-detail section-margin-2">
@@ -218,8 +249,8 @@
               <h3>Roles</h3>
               <ul>
                 <li>UI/UX Designer</li>
-                <li>User Researcher</li>
                 <li>Visual Designer</li>
+                <li>Commercial Designer</li>
               </ul>
             </div>
             <div>
@@ -232,46 +263,19 @@
             <div>
               <h3>Project context</h3>
               <ul>
-                <li>February 2022</li>
-                <li>Group project</li>
+                <li>February 2021</li>
+                <li>Solo project</li>
               </ul>
             </div>
           </div>
         </div>
       </section>
-      <hr id="problem" class="devider" />
-      <section class="problem fade_up">
-        <h3 class="color-blue">Problem</h3>
-        <h4>How Do You Sell Products/Food Without Using a Paid App?</h4>
-        <p>
-          Reorder needed a service to help small businesses sell their products,
-          using WhatsApp as the main app for taking orders. The old homepage
-          made it seem like the service was something created by WhatsApp
-          itself, so they wanted to rebrand it and make it feel like a
-          completely new, standalone brand.
-        </p>
-        <div class="problem-content">
-          <div class="card-content-1 section-margin-2">
-            <!-- <div class="emoji-sm">&#x1F3AF</div> -->
-            <div><i class="bx bx-bullseye color-blue bg-color-blue"></i></div>
-            <div>
-              <p>
-                My goal was to rebrand the Reorder service and help with
-                designing the CMS (Content Management System): a tool that helps
-                users easily create and manage website content, like text and
-                images, as well as organize data.
-              </p>
-            </div>
-          </div>
-        </div>
-        </section>
-        </section>
       <hr id="rebranding" class="devider" />
       <section class="rebranding fade_up">
-        <h3 class="color-blue">Rebranding</h3>
+        <h3 class="color-orange">Rebranding</h3>
         <h4>Old and New Homepage</h4>
         <section class="section-margin-2">
-          <div class="container-overflow-p3">
+          <div class="container-overflow-p3 scrollbar">
             <img
               class="mobile-view"
               src="../images/Smart/Smart.png"
@@ -281,53 +285,27 @@
           <div class="section-margin-2 container-arrow">
             <i class="bx bx-down-arrow-alt"></i>
           </div>
-          <div class="container-overflow-p3">
+          <div class="container-overflow-p3 scrollbar">
             <img
               class="mobile-view"
               src="../images/Smart/Smart_redesign.png"
               alt=""
             />
           </div>
-        </Section>
-      <!-- modal -->
-      <div class="popup-img">
-        <span>&times;</span>
-        <img src="../images/example.png" alt="" />
-      </div>
-      <div class="popup-video">
-        <span>&times;</span>
-        <video
-          autoplay
-          muted
-          loop
-          src="../video/postcard-experiment.mp4"
-        ></video>
-      </div>
-      <!-- modal -->
-      <!-- side-navbar -->
-      <nav class="side-navbar fade_right">
-        <div>
-          <a href="#overview"><p class="menu-item link">Overview</p></a>
-          <a href="#problem"><p class="menu-item link">Problem</p></a>
-          <a href="#rebranding"><p class="menu-item link">Rebranding</p></a>
-          <a href="#process"><p class="menu-item link">Process</p></a>
-          <a href="#userResearch"
-            ><p class="menu-item link">User Research</p></a
-          >
-          <a href="#design"><p class="menu-item link">Design & Testing</p></a>
-          <a href="#testing"><p class="menu-item link">Testing</p></a>
-          <a href="#prototype"><p class="menu-item link">Prototype</p></a>
-          <a href="#reflection"><p class="menu-item link">Reflection</p></a>
-        </div>
-      </nav>
-      <!-- side-navbar -->
-      <!-- top-button -->
-      <div class="top-button">
-        <a class="top_button" href="#top-page"
-          ><i class="bx bx-up-arrow-alt"></i
-        ></a>
-      </div>
-      <!-- top-button -->
+        </section>
+        <hr id="explaining" class="devider">
+        <section>
+          <h3 class="color-orange">Explaining</h3>
+        <h4>Using principles</h4>
+        <section class="section-margin-2"><div class="container-no_overflow">
+            <img
+              class="mobile-view"
+              src="../images/Smart/Smart_redesign_comments.png"
+              alt=""
+            />
+          </div></section>
+          
+        </section>
     </main>
     <footer>
       <div class="footer-container">

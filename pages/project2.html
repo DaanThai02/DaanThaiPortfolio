@@ -23,6 +23,7 @@
     <link href="../styles/header.css" rel="stylesheet" />
   </head>
   <body id="top-page" class="project-body">
+    <canvas id="noise" class="noise" width="1395" height="1313"></canvas>
     <header>
       <nav>
         <ul class="nav-links" id="menu">
@@ -193,10 +194,45 @@
         </ul>
       </nav>
     </header>
-    <main class="project-main container">
+    <!-- modal -->
+    <div class="popup-img">
+      <span>&times;</span>
+      <img src="../images/example.png" alt="" />
+    </div>
+    <div class="popup-video">
+      <span>&times;</span>
+      <video
+        autoplay
+        muted
+        loop
+        src="../video/postcard-experiment.mp4"
+      ></video>
+    </div>
+    <!-- modal -->
+    <!-- side-navbar -->
+    <nav class="side-navbar fade_right">
+      <div>
+        <a href="#overview"><p class="menu-item link">Overview</p></a>
+        <a href="#problem"><p class="menu-item link">Problem</p></a>
+        <a href="#rebranding"><p class="menu-item link">Rebranding</p></a>
+        <a href="#process"><p class="menu-item link">Process</p></a>
+        <a href="#userResearch"><p class="menu-item link">User Research</p></a>
+        <a href="#design"><p class="menu-item link">Design & Testing</p></a>
+        <a href="#reflection"><p class="menu-item link">Reflection</p></a>
+      </div>
+    </nav>
+    <!-- side-navbar -->
+    <!-- top-button -->
+    <div class="top-button">
+      <a class="top_button" href="#top-page"
+        ><i class="bx bx-up-arrow-alt"></i
+      ></a>
+    </div>
+    <!-- top-button -->
+    <main class="project-main container_2">
       <section id="overview" class="brief fade_up">
         <h1>Reorder</h1>
-        <img src="../images/Reorder/Reorder_project_banner_2.png" alt="" />
+        <img src="../images/Reorder/Reorder_project_banner.png" alt="" />
         <div class="overview">
           <div class="section-margin">
             <h4>Overview</h4>
@@ -225,7 +261,7 @@
               <h3>Tools used</h3>
               <ul>
                 <li>Figma</li>
-                <li></li>
+                <li>Adobe Illustrator</li>
               </ul>
             </div>
             <div>
@@ -269,7 +305,7 @@
         <h3 class="color-blue">Rebranding</h3>
         <h4>Old and New Homepage</h4>
         <section class="section-margin-2">
-          <div class="container-overflow">
+          <div class="container-overflow scrollbar">
             <img
               class="mobile-view"
               src="../images/Reorder/Reorder_v1.png"
@@ -279,7 +315,7 @@
           <div class="section-margin-2 container-arrow">
             <i class="bx bx-down-arrow-alt"></i>
           </div>
-          <div class="container-overflow">
+          <div class="container-overflow scrollbar">
             <img
               class="mobile-view"
               src="../images/Reorder/Reorder_v2.png"
@@ -538,45 +574,6 @@
           </p>
         </div>
       </section>
-      <!-- modal -->
-      <div class="popup-img">
-        <span>&times;</span>
-        <img src="../images/example.png" alt="" />
-      </div>
-      <div class="popup-video">
-        <span>&times;</span>
-        <video
-          autoplay
-          muted
-          loop
-          src="../video/postcard-experiment.mp4"
-        ></video>
-      </div>
-      <!-- modal -->
-      <!-- side-navbar -->
-      <nav class="side-navbar fade_right">
-        <div>
-          <a href="#overview"><p class="menu-item link">Overview</p></a>
-          <a href="#problem"><p class="menu-item link">Problem</p></a>
-          <a href="#rebranding"><p class="menu-item link">Rebranding</p></a>
-          <a href="#process"><p class="menu-item link">Process</p></a>
-          <a href="#userResearch"
-            ><p class="menu-item link">User Research</p></a
-          >
-          <a href="#design"><p class="menu-item link">Design & Testing</p></a>
-          <a href="#testing"><p class="menu-item link">Testing</p></a>
-          <a href="#prototype"><p class="menu-item link">Prototype</p></a>
-          <a href="#reflection"><p class="menu-item link">Reflection</p></a>
-        </div>
-      </nav>
-      <!-- side-navbar -->
-      <!-- top-button -->
-      <div class="top-button">
-        <a class="top_button" href="#top-page"
-          ><i class="bx bx-up-arrow-alt"></i
-        ></a>
-      </div>
-      <!-- top-button -->
     </main>
     <footer>
       <div class="footer-container">

@@ -1,6 +1,6 @@
 .main-container {
     margin: 0 auto;
-    max-width: 84rem;
+    max-width: 100rem;
     padding: 4rem 4rem 4rem 4rem;
 }
 
@@ -8,7 +8,7 @@
     margin-bottom: var(--margin-14);
 }
 
-.project-img {
+.project-video {
     overflow: hidden;
     border-radius: var(--border-r);
     box-shadow: var(--boxshadow-2);
@@ -21,7 +21,13 @@
     border-radius: var(--border-r);
 }
 
-.projects img:hover {
+.projects video {
+    max-width: 100%;
+    transition: 0.5s;
+
+}
+
+.projects video:hover {
     transform: scale(1.05);
 }
 
@@ -63,6 +69,11 @@
 .project-info:last-child{
     font-size: var(--font-size-p);
     color: var(--color-light-black);
+}
+
+.link-prototype {
+    color: #3FA9F5;
+    text-decoration: none;
 }
 
 footer {

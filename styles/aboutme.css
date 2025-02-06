@@ -16,8 +16,14 @@
     object-position: center;
     -webkit-filter: grayscale(100%);
     filter: grayscale(100%);
-    animation: grayscale-photo 14s infinite;
-    animation-timing-function: step-end;
+    transition: 0.3s all;
+}
+
+.aboutme-photo img:first-of-type:hover{
+    width: 100%;
+    height: auto;
+    -webkit-filter: grayscale(0%);
+    filter: grayscale(0%);
 }
 
 .img-gallery img {

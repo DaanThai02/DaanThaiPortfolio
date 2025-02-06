@@ -10,3 +10,16 @@
  .container-overflow-p3 img {
     max-width: 100%;
 }
+
+.container-no_overflow {
+    width: auto;
+    height: 100%;
+ 
+    border-radius: 1rem;
+    box-shadow: var(--boxshadow-1);
+    overflow-x: hidden;
+}
+
+.container-no_overflow img{
+    max-width: 100%;
+}
