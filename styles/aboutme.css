@@ -26,6 +26,37 @@
     filter: grayscale(0%);
 }
 
+.internship-content li{
+    list-style-type: none;
+}
+
+.internship-content ul{
+    margin-bottom: var(--margin-1);
+}
+
+.internship-pdf {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.internship-pdf embed{
+    height: 100vh;
+    width: 90%;
+}
+
+.internship-req {
+    display: inline-block;
+    margin-bottom: var(--margin-1);
+    color: var(--color-light-black);
+}
+
+.internship-req:hover{
+    color: var(--color-purple);
+    transition: var(--transition-t);
+}
+
 .img-gallery img {
     width: 10rem;
     height: 10rem;
