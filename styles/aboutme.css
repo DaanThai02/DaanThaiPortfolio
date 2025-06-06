@@ -6,6 +6,16 @@
     gap: 6rem;
 }
 
+.aboutme-heading {
+    display: flex;
+    align-items: center;
+}
+
+.aboutme-heading div {
+    font-size: 2rem;
+    margin: 0 0 1rem 0.8rem;
+}
+
 .aboutme-photo {
     position: relative;
 }
