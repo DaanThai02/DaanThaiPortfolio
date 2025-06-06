@@ -1,3 +1,41 @@
+
+// top button //
+// window.addEventListener("scroll", function () {
+//   console.log("ScrollY:", window.scrollY);
+// });
+
+if (window.location.pathname.endsWith('about.html')) {
+    if ('scrollRestoration' in history) {
+      history.scrollRestoration = 'manual';
+    }
+
+    window.addEventListener('load', function() {
+      // Disable smooth scroll first
+      document.documentElement.style.scrollBehavior = 'auto';
+      
+      window.scrollTo(0, 0);
+      
+      // Re-enable smooth scroll after short timeout (optional)
+      setTimeout(() => {
+        document.documentElement.style.scrollBehavior = '';
+      }, 100);
+    });
+  }
+
+document.addEventListener("DOMContentLoaded", function () {
+  window.addEventListener("scroll", function () {
+    let scroll = window.scrollY;
+    let el = document.querySelector(".top_button");
+    if (!el) return;
+
+    if (scroll > 1) {
+      el.classList.add("button_fade_up");
+    } else {
+      el.classList.remove("button_fade_up");
+    }
+  });
+});
+
 // noise //
 const canvas = document.getElementById('noise');
 const ctx = canvas.getContext('2d');
@@ -21,18 +59,8 @@ function drawNoise() {
 
 drawNoise();
 
-// Add class to animate
-// setTimeout(() => {
-//     canvas.classList.add('noise-animate');
-// }, 0);
-
-
-
-
+// console //
 console.log("Hi, welcome to my portfolio!");
-
-
-
 
 
 document.querySelectorAll("img").forEach(image => {
@@ -67,14 +95,15 @@ document.querySelector(".popup-video").onclick = () => {
     document.querySelector(".popup-video").style.display = "none";
 }
 
-window.addEventListener("scroll", function(event){
-    var scroll = this.scrollY;
-    if(scroll > 1) {
-       let el = document.querySelector(".top_button");
-       el.classList.add("button_fade_up");
-    } else {
-        let el = document.querySelector(".top_button");
-       el.classList.remove("button_fade_up");
-    }
-})
+// window.addEventListener("scroll", function(event){
+//     var scroll = this.scrollY;
+//     if(scroll > 1) {
+//        let el = document.querySelector(".top_button");
+//        el.classList.add("button_fade_up");
+//     } else {
+//         let el = document.querySelector(".top_button");
+//        el.classList.remove("button_fade_up");
+//     }
+// })
+
 
